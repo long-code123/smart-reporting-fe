@@ -1,0 +1,48 @@
+/* AppLayout.css */
+
+.custom-sider {
+  background-color: #f0f2f5; /* Chọn màu nền khác cho thanh Sider */
+  margin-top: 50px;
+}
+
+.custom-menu .ant-menu-item {
+  background-color: #001529; /* Màu nền của mục menu trùng với thanh bên */
+  color: #fff; /* Màu chữ trắng cho mục menu */
+}
+
+.custom-menu .ant-menu-item-selected {
+  background-color: #1890ff; /* Màu nền của mục menu đang được chọn */
+  color: #fff; /* Màu chữ trắng cho mục menu đang được chọn */
+}
+
+.custom-menu .ant-menu-item:hover {
+  background-color: #003140; /* Màu nền khi hover vào mục menu */
+  color: #fff; /* Màu chữ trắng khi hover vào mục menu */
+}
+/* Đảm bảo cột 'Name' không bị thu nhỏ */
+.ant-table .ant-table-thead .ant-table-cell[data-column-key="name"],
+.ant-table .ant-table-tbody .ant-table-cell[data-column-key="name"] {
+  min-width: 200px; /* Đặt chiều rộng tối thiểu cho cột 'Name' */
+  white-space: nowrap; /* Ngăn không cho tên bị ngắt dòng */
+  overflow: hidden; /* Ẩn phần dư thừa của tên nếu quá dài */
+  text-overflow: ellipsis; /* Thêm dấu '...' nếu tên quá dài */
+}
+
+.ant-table {
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  white-space: nowrap; /* Ngăn không cho tiêu đề cột bị ngắt dòng */
+}
+
+.ant-table-tbody > tr > td {
+  white-space: nowrap; /* Ngăn không cho dữ liệu trong cột bị ngắt dòng */
+}
+.custom-table .ant-table-cell {
+  border-right: 1px solid #ddd; /* Đường viền giữa các cột */
+}
+
+.custom-table .ant-table-cell:last-child {
+  border-right: none; /* Loại bỏ đường viền ở cột cuối cùng */
+}
